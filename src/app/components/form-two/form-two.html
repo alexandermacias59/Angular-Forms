@@ -1,0 +1,25 @@
+<!-- <input type="text" id="name" [(ngModel)]="name">
+<div>
+    <button (click)="look()">Dai un occhiata</button>
+    <button (click)="changeName()">Cambia Nome</button>
+</div> -->
+<div class="form-container">
+    <form (ngSubmit)="submit()">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name">
+    </div>
+    <div>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" [(ngModel)]="surname" name="surname">
+    </div>
+    <div>
+        <label for="age">Eta:</label>
+        <input type="text" id="age" [(ngModel)]="age" name="age">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</div>
+
