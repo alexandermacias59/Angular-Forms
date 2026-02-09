@@ -11,11 +11,13 @@ export class FormTwo {
 surname: any;
 age: any;
 submit() {
-
+  console.log(this.name);
+  console.log(this.surname);
+  console.log(this.age);
 }
   name: string = 'paperino';
 look() {
-  console.log(this.name);
+  
 }
 changeName() {
   this.name = 'paperinik';
